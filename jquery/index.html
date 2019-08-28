@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript">
+function convert() {
+    alert("Hello! I am an alert box!!");
+    var dailyMinutes = parseInt(document.getElementById("daily_minutes").value);
+    var totalMinutesPerYear = dailyMinutes * 365;
+    document.getElementById('total_minutes_per_year').innerHTML = totalMinutesPerYear + "";
+}
+</script>
+</head>
+<body>
+<h1> Donate Time -> Time To Money Converter</h1>
+Daily minutes : <input type="text" name="daily_minutes" id="dialy_minutes"><br>
+Total minutes per year : <span id="total_minutes_per_year"></span><br>
+<button type="button">Convert</button>
+</body>
+</html>
